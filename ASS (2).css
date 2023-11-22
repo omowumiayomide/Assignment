@@ -1,0 +1,272 @@
+body{
+    background: white;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+header{
+    height: 6em;
+    background-color: black;
+    display: flex;
+}
+header img{
+    height: 100%;
+    margin-left: 4rem;
+    cursor: pointer;
+}
+header ul{
+    display: flex;
+
+}
+header ul li{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    width: 100%;
+    margin-right: 10rem;
+    display: flex;
+    justify-content: end;
+}
+i{
+    justify-content: center;
+    padding: 20px;
+    font-size: 25px;
+}
+.parent{
+    display: grid;
+    height: 150vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 12.5rem);
+    row-gap: 1.0rem;
+    column-gap: 1.5rem;
+
+} 
+h3{
+    margin: auto;
+}
+
+
+h3::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    left: 0rem;
+    width: 60px;
+    height: 3px;
+    bottom: 0%;
+}
+h3:hover::before{
+    content: '';
+    width:0px;
+    transition: 3s;
+}
+
+h3::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    bottom: 90%;
+    left: 0rem;
+    width: 60px;
+    height: 3px;
+}
+
+h3:hover::after{
+content: '';
+width: 0px;
+transition: 3s;
+}
+
+.child1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0;
+    color: white;
+    filter: blur(15px);
+}
+.child1 img{
+    width: 100%;
+    height: 100%;
+}
+.child1:hover{
+    font-size: 20px;
+    filter: blur(0px);
+    transition: 2s;
+}
+.child img:hover{
+        transform:scale(150%);
+}
+.text1{
+    position: absolute;
+
+}
+.child2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0;
+    color: white;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    filter: blur(10px);
+}
+.child2 img{
+    width: 100%;
+    height: 100%;
+}
+.child2:hover{
+    font-size: 20px;
+    filter: blur(0px);
+    transition: 2s;
+
+}
+.text2{
+    position: absolute;
+}
+.child3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0;
+    color: white;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    filter: blur(10px);
+}
+.child3 img{
+    width: 100%;
+    height: 100%;
+}
+.child3:hover{
+    font-size: 20px;
+    filter: blur(0px);
+    transition: 2s;
+
+}
+.text3{
+    position: absolute;
+}
+.child4{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0;
+    color: white;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    filter: blur(10px);
+}
+.child4 img{
+    width: 100%;
+    height: 100%;
+}
+.child4:hover{
+    font-size: 20px;
+    filter: blur(0px);
+    transition: 2s;
+
+}
+.text4{
+    position: absolute;
+}
+.child5{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0;
+    color: white;
+    filter: blur(10px);
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.child5 img{
+    width: 100%;
+    height: 100%;
+}
+.child5:hover{
+    font-size: 20px;
+    filter: blur(0px);
+    transition: 2s;
+
+}
+.text5{
+    position: absolute;
+}
+
+.child6{
+    grid-row: 4 /span 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0;
+    color: white;
+    filter: blur(10px);
+}
+.child6 img{
+    width: 100%;
+    height: 100%;
+}
+.child6:hover{
+    font-size: 20px;
+    filter: blur(0px);
+    transition: 2s;
+
+}
+.text6{
+    position: absolute;
+}
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: relative;
+}
+.footer_img{
+    height: 5rem;
+    padding: 15px;
+
+}
+.social-icon{
+    padding: 5px;
+    font-size: 10pt;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
